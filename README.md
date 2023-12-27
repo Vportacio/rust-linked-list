@@ -33,9 +33,13 @@ Initializes a new empty linked list.
 
 #### push(value: i32)
 `pub fn push(&mut self, value: i32) {
-    // Implementation to add a new node to the list
-    // ...
-}`
+        let new_node = Node {
+            value: value,
+            next: self.head.take()
+        };
+        
+        self.head = Some(Box::new(new_node))
+    }`
 
 Adds a new node with the specified value to the beginning of the list.
 
