@@ -1,10 +1,7 @@
 
 pub mod linked;
-use crate::linked::linked_list_struct;
+use crate::linked::linked_list::LinkedList;
 
 fn main() {
-    crate::linked_list_struct::LinkedList::new();
+    crate::LinkedList::new();
 }
-
-// Dar uma polida no codigo antes de subir
-// procurar como testar essas funcoes
